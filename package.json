@@ -1,0 +1,14 @@
+{
+  "name": "eqreblk",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "start": "npm run start --workspace apps/api",
+    "start:web": "npm run dev --workspace apps/web"
+  }
+}
